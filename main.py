@@ -4,8 +4,8 @@ import requests
 RAPIDAPI_KEY = "21b1bfa893msha5edca65a085f4bp17cc86jsn412f7bba419e"
 
 # REEMPLAZA CON TUS DATOS REALES DE TELEGRAM:
-TELEGRAM_TOKEN = 8888052898:AAEYS2_2bsyxd0p1GXBrcrpQe6XYh0xEg1M
-TELEGRAM_CHAT_ID = 1203879706
+TELEGRAM_TOKEN = "8888052898:AAEYS2_2bsyxd0p1GXBrcrpQe6XYh0xEg1M"
+TELEGRAM_CHAT_ID = "1203879706"
 
 headers = {
     "X-RapidAPI-Key": RAPIDAPI_KEY,
@@ -14,7 +14,7 @@ headers = {
 
 def enviar_alerta(mensaje):
     """Envía la alerta a Telegram."""
-    if TELEGRAM_TOKEN == : 8888052898:AAEYS2_2bsyxd0p1GXBrcrpQe6XYh0xEg1M
+    if TELEGRAM_TOKEN == : "8888052898:AAEYS2_2bsyxd0p1GXBrcrpQe6XYh0xEg1M"
         print("Aviso: Debes configurar tu TELEGRAM_TOKEN en main.py")
         return
 
