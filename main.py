@@ -14,7 +14,7 @@ headers = {
 
 def enviar_alerta(mensaje):
     """Envía la alerta a Telegram."""
-    if TELEGRAM_TOKEN == "PEGA_AQUI_TU_TOKEN_DE_BOTFATHER":
+    if TELEGRAM_TOKEN == : 8888052898:AAEYS2_2bsyxd0p1GXBrcrpQe6XYh0xEg1M
         print("Aviso: Debes configurar tu TELEGRAM_TOKEN en main.py")
         return
 
