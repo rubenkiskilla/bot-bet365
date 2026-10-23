@@ -59,7 +59,7 @@ def comprobar_cuotas_bet365():
                         except (ValueError, TypeError):
                             cuota = 0.0
                         
-                        if cuota >= 2.10:
+                        if cuota >= 1.10:
                             prob_implicita = round((1 / cuota) * 100, 1)
                             mensaje = (
                                 f"🚨 *¡OPORTUNIDAD (+EV) EN BET365!*\n\n"
