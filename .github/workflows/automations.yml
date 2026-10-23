@@ -1,0 +1,24 @@
+name: Bot Bet365 Automatico
+
+on:
+  schedule:
+    - cron: '*/30 * * * *'  # Se ejecuta automáticamente cada 30 minutos
+  workflow_dispatch:        # Permite ejecutarlo manualmente con un botón
+
+jobs:
+  run-bot:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Descargar código
+        uses: actions/checkout@v3
+
+      - name: Configurar Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Instalar librerías
+        run: pip install requests
+
+      - name: Ejecutar Bot
+        run: python main.py
